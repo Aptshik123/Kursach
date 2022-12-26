@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Registration"
+    android:background="@drawable/authscren">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="355dp">
+
+        <EditText
+            android:id="@+id/NameR"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Псевдоним" android:textStyle="italic"
+            android:padding="5dp"
+            android:background="@drawable/shape"/>
+        <TextView
+            android:id="@+id/textNikname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:text="" android:textStyle="bold|italic"/>
+        <EditText
+            android:id="@+id/emailR"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Почта" android:textStyle="italic"
+            android:padding="5dp"
+            android:background="@drawable/shape"/>
+        <TextView
+            android:id="@+id/textEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:text="" android:textStyle="bold|italic"/>
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/passwordR"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Пароль" android:textStyle="italic"
+            android:padding="5dp"
+            android:background="@drawable/shape"/>
+        <TextView
+            android:id="@+id/textPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text=""
+            android:textColor="@color/red"
+            android:textStyle="bold|italic" />
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/passwordR2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Повторите пароль" android:textStyle="italic"
+            android:padding="5dp"
+            android:background="@drawable/shape"/>
+        <TextView
+            android:id="@+id/textPassword2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text=""
+            android:textColor="@color/red"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_below="@id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp">
+
+        <Button
+            android:id="@+id/btnRegR"
+            android:backgroundTint="@color/pink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="15dp"
+            android:text="Регистрация"
+            android:textAllCaps="false"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+</RelativeLayout>

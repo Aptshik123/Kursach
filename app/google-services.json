@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "497127832107",
+    "project_id": "best-quizzes-9fb26",
+    "storage_bucket": "best-quizzes-9fb26.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497127832107:android:218e84d07476da2bfd086e",
+        "android_client_info": {
+          "package_name": "com.example.bestquizzes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "497127832107-i5pnv12b1b1nevv16pgmsrpin8uh5em3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3SRjMve0Of-gF8-yCjJU-XhZjCUvR2TM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "497127832107-i5pnv12b1b1nevv16pgmsrpin8uh5em3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

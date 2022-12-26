@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeNavigation"
+        android:icon="@drawable/home"
+        android:title="Главная"/>
+    <item
+        android:id="@+id/filterNavigation"
+        android:icon="@drawable/filter"
+        android:title="Фильтр"/>
+    <item
+        android:id="@+id/addNavigation"
+        android:icon="@drawable/add_quizz"
+        android:title="Создать"/>
+    <item
+        android:id="@+id/settingNavigation"
+        android:icon="@drawable/settings"
+        android:title="Настройки"/>
+    <item
+        android:id="@+id/personNavigation"
+        android:icon="@drawable/person"
+        android:title="Профиль"/>
+</menu>

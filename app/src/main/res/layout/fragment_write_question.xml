@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.addQuizz.WriteQuestion"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_margin="20dp"
+                android:text=" Введите номер вопроса:"
+                android:textColor="@color/grey"
+                android:layout_gravity="center"
+                android:textSize="15dp"
+                android:gravity="end"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/questionNumber"
+                android:background="@drawable/shape"
+                android:padding="3dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Введите вопрос:"
+            android:textColor="@color/grey"
+            android:layout_gravity="center"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/question"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Введите варианты ответа:"
+            android:textColor="@color/grey"
+            android:layout_gravity="center"
+            android:textSize="15dp"
+            android:gravity="end"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/firstAnswer"
+            android:background="@drawable/shape"
+            android:padding="5dp"
+            android:hint="первый вариант (обязательно)"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/secondAnswer"
+            android:background="@drawable/shape"
+            android:padding="5dp"
+            android:hint="второй вариант (обязательно)"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/thirdAnswer"
+            android:background="@drawable/shape"
+            android:padding="5dp"
+            android:hint="третий вариант (по усмотрению)"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/fourthAnswer"
+            android:background="@drawable/shape"
+            android:padding="5dp"
+            android:hint="четвертый вариант (по усмотрению)"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Введите верный вариант ответа:"
+            android:textColor="@color/grey"
+            android:layout_gravity="center"
+            android:textSize="15dp"
+            android:gravity="end"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/rightAnswer"
+            android:background="@drawable/shape"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/writeQuest"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="Сохранить"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>
