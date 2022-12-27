@@ -13,8 +13,6 @@ import com.example.bestquizzes.ui.settings.SettingsFragment
 import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
-    private val auth: FirebaseAuth = FirebaseAuth.getInstance()
-    val uid = auth.currentUser?.uid
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

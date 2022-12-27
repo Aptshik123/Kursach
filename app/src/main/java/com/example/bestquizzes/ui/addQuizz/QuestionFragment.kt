@@ -25,10 +25,7 @@ class QuestionFragment : Fragment() {
     private var model: Parcelable? = null
     private lateinit var questionAdapter: QuestionAdapter
     private lateinit var binding: FragmentQuestionBinding
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         binding = FragmentQuestionBinding.inflate(layoutInflater)
 
         val bundle = this.arguments
@@ -40,7 +37,6 @@ class QuestionFragment : Fragment() {
         questionAdapter.setItems(listOf(Question(1, "выаываы", 1, "выаываы", "выаываы", "выаываы", "выаываы")))
 
         binding.addQuest.setOnClickListener{
-
             val fragment = WriteQuestion()
             val bundle1 = Bundle()
             bundle1.putParcelable("Test", model)
@@ -50,7 +46,6 @@ class QuestionFragment : Fragment() {
         }
 
         return binding.root
-
     }
 
     private fun configureAdapter(){

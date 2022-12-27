@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.bestquizzes.R
 import com.example.bestquizzes.databinding.FragmentAddQuizzBinding
+import com.example.bestquizzes.firebase.FirebaseUser
 import com.example.bestquizzes.models.Test
 import com.example.bestquizzes.ui.MainActivity
 import com.google.firebase.auth.FirebaseAuth
@@ -23,7 +24,7 @@ class AddQuizzFragment : Fragment() {
         binding = FragmentAddQuizzBinding.inflate(layoutInflater)
         binding.next.setOnClickListener{
 
-            val uid = MainActivity().uid
+            val uid = FirebaseUser.uid
             val fragment = QuestionFragment()
             val bundle = Bundle()
             if (uid != null){
@@ -41,7 +42,7 @@ class AddQuizzFragment : Fragment() {
             nameOfTest = binding.nameQuizzes.text.toString(),
             topic = binding.topicQuizzes.text.toString(),
             uid = uid,
-            questionList = listOf()
+            questionList = mutableListOf()
         )
     }
 
